@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop-design</title>
+<link rel="stylesheet" type="text/css" href="shop_style.css">
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<div class="first_section">
+<img src="background1366.jpg" alt="shop" style="width:100%;"> 
+
+<div class="sticky_head">
+    <div class="top-left">
+        <a href="#"><img src="Vector%20Smart%20Object.png"></a>
+    </div>
+    <div class="top-right">
+        <div class="navbar">
+        <a class="active" href="file:///G:/14SOECE11029/html/home-shop/shop-design.html">Home</a>
+        <a  href="file:///G:/14SOECE11029/html/home-shop/second_page.html">The Property</a>
+        <a href="#play_now">Play Now</a>
+        <a  href="#faq">FAQ'S</a> 
+        </div>
+    </div>
+</div>
+    
+<div class="centered">
+    <p class="first_head"><span class="win_opacity">Win a </span><strong>London Home</strong></p>
+    <p class="first_head_parag"><span class="win_opacity">Win a Fabulous London Home Worth </span><span style="color: #d3131e;">₤1 Million</span></p>   
+   <div class="first"><button class="play_btn">Play Now</button></div>
+
+    <div class="below_arrow">
+            <img src="down%20arrow.png" style="width: auto" id="down_arrow">
+    </div>
+</div>
+</div>   
+</div>
+
+<div class="dream_house" id="house_des">
+    <p class="dream_house_head"> Win Your <span style="color: #d3131e;">Dream House</span></p >
+        <hr width="10%">
+    <div class="dream_paragraph" >
+    <p>We are Very Proud to be able to offer you a chance to win this magnificant <b>3 Badroom, 2 Bathroom third Floor Apartment with a Balcony</b> which, has been recently finished to an exceptionally high standard.</p>
+        <p>The Apartment is situated in a populer portered Building in the heart of<b> Maida Vale.</b></p>
+        <p>Maida Vale is one of the mmost highly prized residential areas fringing th heart of London. The Property is located 0.4 miles form Maida Vale Undergrounf station and is also 0.4 miles from Warwick Avenue <br>Underground Station.</p>
+    </div>
+</div>
+
+<div class="container" id="que_text">
+    <img src="shadow.png" alt="shop"class="img_shadow"> 
+    <div class="centered_text">
+    <p>To enter simply select the right answer to the question below:</p>
+        <hr width="16%">
+        <div class="que_bank">
+            <p><b>Which Landmark is the closest to Maida Vale Underground station?</b></p>
+        </div>
+        <ul class="answer">
+            <li>A: Buckingham Palace</li>
+            <li>B: Lord's Cricket Ground</li>
+            <li>C: The Shard</li>
+        </ul>
+                <button class="play_btn">Play Now</button>
+
+    </div>
+</div>
+
+<div class="container">
+<div class="charity_sec">
+   <p style="opacity: 0.8"> We are committed to helping those suffering from humanitarian crises. In support of this, we will donate 10% of our admin fee <br> to charity. Read More <a href="#" class="underline">here.</a></p>
+</div>
+   <div class="terms_condition_section">
+   <ul class="terms_sec">
+            <li class="term">Terms & Condition</li>
+            <li class="term">Supporting Charity</li>
+        </ul>
+   </div>
+   <div class="footer">
+     <p style="opacity: 0.8">@2018,winalonhome.Powered by Shopify</p>
+   </div>
+
+</div>
+    <script>
+        $(".play_btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#que_text").offset().top
+        }, 800);
+        });
+        
+        $(".below_arrow").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#house_des").offset().top
+        }, 500);
+        });
+    </script>
+</body>
+</html> 
